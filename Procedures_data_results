@@ -1,0 +1,5 @@
+SELECT description,
+COUNT(*)
+FROM public.procedures
+where description in ('Renal dialysis (procedure)','Gonorrhea infection test','Biopsy of breast (procedure)')
+GROUP BY description
